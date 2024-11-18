@@ -9,26 +9,26 @@ public class BasePage {
 
     public static WebDriver driver;
 
-    public void setDriver(WebDriver driver){
+    public void setDriver(WebDriver driver) {
         BasePage.driver = driver;
     }
 
     /*
     find and return a web element
      */
-    protected WebElement find(By locator){
+    protected WebElement find(By locator) {
         return driver.findElement(locator);
     }
 
     /*
     find the element and pass the text
      */
-    protected void set(By locator, String text){
+    protected void set(By locator, String text) {
         find(locator).clear();
         find(locator).sendKeys(text);
     }
 
-    protected void click(By locator){
+    protected void click(By locator) {
         find(locator).click();
     }
 }
