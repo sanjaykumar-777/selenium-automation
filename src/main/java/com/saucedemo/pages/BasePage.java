@@ -4,6 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+/*
+If you have WebDriver APIs in your test
+methods, You're Doing it wrong
+-Simon Stewart
+ */
 
 public class BasePage {
 
