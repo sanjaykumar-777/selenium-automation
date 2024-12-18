@@ -2,8 +2,8 @@ package com.demoqa.pages.alerts_frames_windows;
 
 import org.openqa.selenium.By;
 
-import static utilities.SwitchToUtility.switchToDefaultContent;
-import static utilities.SwitchToUtility.switchToFrameString;
+import static utilities.JavaScriptUtility.scrollToElementJS;
+import static utilities.SwitchToUtility.*;
 
 public class FramesPage extends Alerts_Frames_WindowsPage{
     private By textInFrame = By.id("sampleHeading");
@@ -19,7 +19,10 @@ public class FramesPage extends Alerts_Frames_WindowsPage{
         switchToFrameString(iFrameBigBox);
     }
 
-
+    private void switchToSmallBox() {
+//    switchToFrameIndex(3);
+        switchToFrameElement(find(iFrameSmallBox));
+    }
 
     public String getTextInBigFrame() {
         switchToBigBox();
@@ -27,5 +30,13 @@ public class FramesPage extends Alerts_Frames_WindowsPage{
         System.out.println("Big Frame Text: " + bigFrameText);
         switchToDefaultContent();
         return bigFrameText;
+    }
+
+    public String getTextInSmallFrame() {
+        switchToSmallBox();
+        String smallFrameText = find(textInFrame).getText();
+        System.out.println("Small Frame Text: " + smallFrameText);
+        switchToDefaultContent();
+        return smallFrameText;
     }
 }
