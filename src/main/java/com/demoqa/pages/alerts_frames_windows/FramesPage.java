@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import static utilities.JavaScriptUtility.scrollToElementJS;
 import static utilities.SwitchToUtility.*;
 
-public class FramesPage extends Alerts_Frames_WindowsPage{
+public class FramesPage extends Alerts_Frames_WindowsPage {
     private By textInFrame = By.id("sampleHeading");
     private String iFrameBigBox = "frame1";
     private By headerFramesText = By.xpath("//div[@id='app']//h1[text()='Frames']");

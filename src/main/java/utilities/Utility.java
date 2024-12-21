@@ -7,7 +7,7 @@ public class Utility {
 
     public static WebDriver driver;
 
-    public static void setUtilityDriver(){
+    public static void setUtilityDriver() {
         driver = BasePage.driver;
     }
 

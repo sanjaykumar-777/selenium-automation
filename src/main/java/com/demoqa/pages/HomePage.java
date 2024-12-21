@@ -7,6 +7,7 @@ import com.demoqa.pages.forms.FormsPage;
 import com.base.BasePage;
 import com.demoqa.pages.widgets.WidgetsPage;
 import org.openqa.selenium.By;
+
 import static utilities.JavaScriptUtility.scrollToElementJS;
 
 public class HomePage extends BasePage {
@@ -17,27 +18,30 @@ public class HomePage extends BasePage {
     private By framesMenuItem = By.xpath("//li[@id='item-2']/span[text()='Frames']");
 
 
-    public FormsPage goToForms(){
+    public FormsPage goToForms() {
         scrollToElementJS(formsCard);
         click(formsCard);
         return new FormsPage();
     }
-    public ElementsPage goToElements(){
+
+    public ElementsPage goToElements() {
         scrollToElementJS(elementsCard);
         click(elementsCard);
         return new ElementsPage();
     }
 
-    public WidgetsPage goToWidgets(){
+    public WidgetsPage goToWidgets() {
         scrollToElementJS(widgetsCard);
         click(widgetsCard);
         return new WidgetsPage();
     }
+
     public Alerts_Frames_WindowsPage goToAlertsFramesWindowsCard() {
         scrollToElementJS(alertsFrameWindowsCard);
         click(alertsFrameWindowsCard);
         return new Alerts_Frames_WindowsPage();
     }
+
     public FramesPage clickFrames() {
         scrollToElementJS(framesMenuItem);
         click(framesMenuItem);

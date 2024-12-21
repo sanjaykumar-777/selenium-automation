@@ -75,6 +75,7 @@ public class PracticeFormPage extends FormsPage {
     public boolean isFemaleSelected() {
         return find(femaleRadioButton).isSelected();
     }
+
     public void clickSubmitButton() {
 //    scrollToElementJS(submitButton);
         click(submitButton);

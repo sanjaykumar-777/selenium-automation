@@ -32,6 +32,7 @@ public class SelectMenuPage extends WidgetsPage {
         scrollToElementJS(standardMultiSelect);
         deselectByValue(standardMultiSelect, value);
     }
+
     public List<String> getAllSelectedStandardMultiOptions() {
         return getAllSelectedOptions(standardMultiSelect);
     }

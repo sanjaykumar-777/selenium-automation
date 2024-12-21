@@ -37,10 +37,10 @@ public class BasePage {
         find(locator).click();
     }
 
-    public static void delay(int miliSeconds){
+    public static void delay(int miliSeconds) {
         try {
             Thread.sleep(miliSeconds);
-        }catch (InterruptedException exc){
+        } catch (InterruptedException exc) {
             exc.printStackTrace();
         }
     }

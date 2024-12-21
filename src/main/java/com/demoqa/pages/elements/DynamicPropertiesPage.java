@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import static utilities.GetUtility.*;
 import static utilities.WaitUtility.*;
 
-public class DynamicPropertiesPage extends ElementsPage{
+public class DynamicPropertiesPage extends ElementsPage {
     private By visibleAfterButton = By.id("visibleAfter");
 
     public String getVisibleAfterButtonText() {

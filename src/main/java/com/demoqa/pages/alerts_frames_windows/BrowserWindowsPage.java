@@ -6,11 +6,13 @@ import java.util.Set;
 
 import static utilities.SwitchToUtility.switchToWindow;
 
-public class BrowserWindowsPage extends Alerts_Frames_WindowsPage{
+public class BrowserWindowsPage extends Alerts_Frames_WindowsPage {
     private By newWindowButton = By.id("windowButton");
+
     public void clickNewWindowButton() {
         click(newWindowButton);
     }
+
     public void switchToNewWindow() {
         // Step 1: Get The Current "Main" Window Handle
         String currentHandle = driver.getWindowHandle();

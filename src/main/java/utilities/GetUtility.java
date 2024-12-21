@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import java.util.Set;
 
-public class GetUtility extends Utility{
+public class GetUtility extends Utility {
     public static String getWindowHandle() {
         return driver.getWindowHandle();
     }
